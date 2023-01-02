@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px; height: 200px;
+            border-radius: 5px;
+            border: 3px solid red;
+            text-align: center;
+            vertical-align: middle;
+            display:table-cell;
+            /* display:table-cell -> td를 사용한 것 과 같은 효과 */
+        }
+        span.name{
+            color: darkgreen;
+            font: bold 200% "맑은 고딕", sans-serif;
+        }
+        span.major{
+            color: darkblue;
+            font: italic bold 150% sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let name = prompt("이름","");
+        let major = prompt("전공","");
+        document.write("<div>");
+        document.write("<span class='name'>"+name+"</span>"+"<br>");
+        // ""안에 '' 로 값을 표현한다.
+        document.write("<span class='major'>"+major+"</span>");
+        document.write("</div>");
+    </script>
+</body>
+</html>

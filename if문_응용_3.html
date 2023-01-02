@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+      let n1 = parseInt(prompt("수 1을 입력하세요",""));
+      let n2 = parseInt(prompt("수 2을 입력하세요",""));
+      let op = prompt("연산자 입력하세요","+,-,*,/,% 중 하나","");
+
+      if(op == "+")
+      document.write((n1 + n2)+"<br>");
+      else if(op == "-")
+      document.write((n1 - n2)+"<br>");
+      else if(op == "*")
+      document.write((n1 * n2)+"<br>");
+      else if(op == "/"){
+        if(n2 != 0)
+        document.write((n1 / n2)+"<br>");
+        else
+        document.write("분모가 0 입니다");
+        }
+
+        else if(op == "%"){
+        if(n2 != 0)
+        document.write((n1 % n2)+"<br>");
+        else
+        document.write("분모가 0 입니다");
+        }
+        
+
+    
+      
+      
+      
+      
+     
+
+    </script>
+</body>
+</html>

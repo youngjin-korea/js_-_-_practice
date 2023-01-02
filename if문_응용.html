@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let grade;
+        let score = prompt("김영진 님의 점수를 입력하시오",100);
+        score=parseInt(score);
+
+        if(score>=90 && score<=100)
+        grade = "A";
+        else if(score>=80 && score<90)
+        grade = "B";
+        else if(score>=70 && score<80)
+        grade = "c";
+        else if(score>=60 && score<70)
+        grade = "D";
+        else if(score>=0 && score<60)
+        
+        if(score<=100 && score>=0)
+        document.write(score+"는"+grade+"입니다.<br>");
+
+        else 
+        document.write("잘못 입력 하셨습니다.");
+    </script>
+</body>
+</html>
